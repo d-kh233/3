@@ -1,37 +1,3 @@
-from scipy import stats
-1 
-norm = stats.norm(loc=0,scale=1)
-pdf_norm_value=norm.pdf(0)
-cdf_norm_value=norm.cdf(1)
-random_values=norm.rvs(size=10)
-
-print(norm)
-print(pdf_norm_value)
-print(cdf_norm_value)
-print(random_values)
-
-2
-uniform = stats.uniform(loc=0,scale=1)
-pdf_uniform_value=uniform.pdf(0)
-cdf_uniform_value=uniform.cdf(1)
-random_values_uniform=uniform.rvs(size=10)
-
-print(uniform)
-print(pdf_uniform_value)
-print(cdf_uniform_value)
-print(random_values_uniform)
-
-3
-st = [11, 12, 13, 15]
-t_statistic, p_value = stats.ttest_1samp(st, popmean=3)
-print(t_statistic, p_value)
-
-4
-st1=[100, 200, 300, 400, 500]
-st2=[300, 400,500,600,700]
-t_statistic, p_value= stats.ttest_ind(st1, st2)
-print (t_statistic, p_value)
-
 1
 from scipy import stats
 
