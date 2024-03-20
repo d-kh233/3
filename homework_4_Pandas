@@ -27,7 +27,7 @@ students_csv = pd.DataFrame({    # "Файл"
     'Возраст': students_ages,
     'Класс': students_class
 })    
-print(students_all)
-print(students_all.head(3))
-print(students_all.tail(2))
-students_all.info()
+print(students_csv)
+print(students_csv.head(3))
+print(students_csv.tail(2))
+students_csv.info()
